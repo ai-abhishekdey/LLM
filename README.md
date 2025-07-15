@@ -6,24 +6,47 @@ This repo contains projects related to large language models
 
 ## Getting Started:
 
-To start with buiding llm apps, getting model API calls and monitoring the API calls, create accounts and get API keys from 
+To get started with building and monitoring LLM applications:
 
-1. [OpenAI](https://platform.openai.com/api-keys)
+* Create accounts on **OpenAI**, **Hugging Face**, and **LangSmith**.
 
-   * Click on **Create new secret key**
+* Obtain API keys from each platform.
 
-2. [Hugging-Face](https://huggingface.co/login)
+* Use these keys to set up and monitor your model API calls.
 
-   * Go to **settings** -> **Access Tokens**
+### Open-AI
+
+* Create account in [OpenAI](https://platform.openai.com/api-keys)
+
+* Click on **Create new secret key**
+
+<p align="left">
+<img src="open_ai.png" width="640" height="360">
+</p>
+
+### Hugging Face
+
+* Create account in [Hugging-Face](https://huggingface.co/login)
+
+* Go to **settings** -> **Access Tokens**
    
-   * Click on **Create new token**
+* Click on **Create new token**
 
-3. [LangSmith](https://smith.langchain.com/)
+<p align="left">
+<img src="hugging_face.png" width="640" height="360">
+</p>
 
-   * Go to **settings**
+### Lang Smith
 
-   * Click on **Create API Key**
+* Create account in [LangSmith](https://smith.langchain.com/)
 
+* Go to **settings**
+
+* Click on **Create API Key**
+
+<p align="left">
+<img src="langsmith.png" width="640" height="360">
+</p>
 
 ## Setup your environment variables in bashrc
 
@@ -31,11 +54,8 @@ To start with buiding llm apps, getting model API calls and monitoring the API c
 
 ```
 echo "export OPENAI_API_KEY='<your-openai-api-key>'" >> ~/.bashrc
-
 echo "export HF_TOKEN='<your-hugging-face-token>'" >> ~/.bashrc
-
 echo "export LANGSMITH_TRACING=true" >> ~/.bashrc
-
 echo "export LANGSMITH_API_KEY='<your-langsmith-api-key>'" >> ~/.bashrc
 
 ```
@@ -48,7 +68,7 @@ source ~/.bashrc
 
 ```
 
-## Check your environment variables in a python 
+## Check your environment variables in python 
 
 
 ```
