@@ -16,6 +16,7 @@ query=args.query
 
 # Get environment variables 
 
+openai_api_key = os.environ["OPENAI_API_KEY"]
 langsmith_api_key = os.environ["LANGSMITH_API_KEY"]
 langsmith_tracing = os.environ["LANGSMITH_TRACING"]
 

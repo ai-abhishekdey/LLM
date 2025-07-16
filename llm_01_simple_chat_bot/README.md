@@ -1,4 +1,4 @@
-## Simple chatbot using Ollama and Open-AI models
+## Simple chatbot using Ollama, Open-AI and Hugging-Face models
 
 **Author: Abhishek Dey**
 
@@ -32,3 +32,5 @@ pip3 install -r requirements.txt
 * [using ollama](using_ollama)
 
 * [using openai](using_openai)
+
+* [using hugging-face](using_huggingface)

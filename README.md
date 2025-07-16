@@ -21,7 +21,7 @@ To get started with building and monitoring LLM applications:
 * Click on **Create new secret key**
 
 <p align="left">
-<img src="open_ai.png" width="640" height="360">
+<img src="img/open_ai.png" width="640" height="360">
 </p>
 
 
@@ -42,7 +42,7 @@ To get started with building and monitoring LLM applications:
 * Click on **Create new token**
 
 <p align="left">
-<img src="hugging_face.png" width="640" height="360">
+<img src="img/hugging_face.png" width="640" height="360">
 </p>
 
 ### Lang Smith
@@ -54,7 +54,7 @@ To get started with building and monitoring LLM applications:
 * Click on **Create API Key**
 
 <p align="left">
-<img src="langsmith.png" width="640" height="360">
+<img src="img/langsmith.png" width="640" height="360">
 </p>
 
 ## Setup your environment variables in bashrc
