@@ -24,7 +24,7 @@ prompt = ChatPromptTemplate.from_messages(
     ]
 )
 
-# LLM model from ollama
+# LLM model from open-ai
 
 
 llm=ChatOpenAI(model="gpt-3.5-turbo")
