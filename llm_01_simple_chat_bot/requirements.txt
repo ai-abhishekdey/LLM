@@ -1,0 +1,11 @@
+langchain
+langchain-core
+langchain-openai
+langchain-ollama
+langchain-huggingface
+langchain-community
+langgraph
+langsmith
+langserve
+streamlit
+
