@@ -29,6 +29,6 @@ pip3 install -r requirements.txt
 
 ## Dive into chatbots:
 
-* [using ollama](using_ollama/README.md)
+* [using ollama](using_ollama)
 
-* [using openai](using_openai/README.md)
+* [using openai](using_openai)

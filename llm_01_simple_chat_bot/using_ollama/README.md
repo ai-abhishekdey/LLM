@@ -46,7 +46,7 @@ python3 dev.py --model "gemma2:latest" --query "Write a short paragraph on Holi 
 ```
 
 <p align="left">
-<img src="img/output_dev.png" width="640" height="360">
+<img src="img/output_dev.png" width="1080" height="480">
 </p>
 
 ## Run as Streamlit GUI
@@ -57,12 +57,12 @@ streamlit run app.py
 ```
 
 <p align="left">
-<img src="img/output_app.png" width="640" height="360">
+<img src="img/output_app.png" width="860" height="480">
 </p>
 
 
 ## Langsmith Tracing
 
 <p align="left">
-<img src="img/output_langsmith.png" width="640" height="360">
+<img src="img/output_langsmith.png" width="1080" height="480">
 </p>
