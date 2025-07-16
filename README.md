@@ -24,6 +24,15 @@ To get started with building and monitoring LLM applications:
 <img src="open_ai.png" width="640" height="360">
 </p>
 
+
+### Note:
+
+* Make sure you add atleast **$5** to able to access the open-ai models
+
+* Use [this link](https://platform.openai.com/settings/organization/billing/overview) to recharge
+
+* You can monitor the api calls usage [here](https://platform.openai.com/usage)
+
 ### Hugging Face
 
 * Create account in [Hugging-Face](https://huggingface.co/login)
