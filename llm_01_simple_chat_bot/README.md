@@ -37,7 +37,7 @@ pip3 install -r requirements.txt
 
 ## Steps into building chatbots:
 
-* Step-1: Import necessary libraries and set-up the environment variables
+### Step-1: Import necessary libraries and set-up the environment variables
 
 ```
 
@@ -59,7 +59,7 @@ os.environ["LANGCHAIN_PROJECT"] = "LLM_01"
 
 ```
 
-* Step-2: Create a Prompt template
+### Step-2: Create a Prompt template
 
 ```
 prompt = ChatPromptTemplate.from_messages(
@@ -73,23 +73,23 @@ prompt = ChatPromptTemplate.from_messages(
 
 ```
 
-* Step-3: Load the LLM model
+### Step-3: Load the LLM model
 
-* Open-AI
+* **Open-AI**
 
 ```
 llm=ChatOpenAI(model="gpt-3.5-turbo")
 
 ```
 
-* Ollama
+* **Ollama**
 
 ```
 
 llm=OllamaLLM(model=model)
 
 ```
-* Hugging-face
+* **Hugging-face**
 
 ```
 hf_endpoint = HuggingFaceEndpoint(
@@ -105,21 +105,21 @@ llm=ChatHuggingFace(llm=hf_endpoint)
 
 ```
 
-* Step-4: Create an object for Output parser
+### Step-4: Create an object for Output parser
 
 ```
 output_parser = StrOutputParser()
 
 ```
 
-* Step-5: Create a chain
+### Step-5: Create a chain
 
 ```
 chain = prompt | llm | output_parser
 
 ```
 
-* Step-6: Invoke chain and get llm response
+### Step-6: Invoke chain and get llm response
 
 ```
 llm_response=chain.invoke({"query": query})
