@@ -40,15 +40,15 @@ pip3 install -r requirements.txt
 ### Step-1: Import necessary libraries and set-up the environment variables
 
 ```
-
 import os
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.output_parsers import StrOutputParser
-from langchain_openai import ChatOpenAI
+import streamlit as st
+from fastapi import FastAPI
+from pydantic import BaseModel
 
 # Get environment variables 
 
 openai_api_key = os.environ["OPENAI_API_KEY"]
+hugging_face_token = os.environ["HF_TOKEN"]
 langsmith_api_key = os.environ["LANGSMITH_API_KEY"]
 langsmith_tracing = os.environ["LANGSMITH_TRACING"]
 
@@ -56,12 +56,13 @@ langsmith_tracing = os.environ["LANGSMITH_TRACING"]
 
 os.environ["LANGCHAIN_PROJECT"] = "LLM_01"
 
-
 ```
 
 ### Step-2: Create a Prompt template
 
 ```
+from langchain_core.prompts import ChatPromptTemplate
+
 prompt = ChatPromptTemplate.from_messages(
 
     [
@@ -78,6 +79,8 @@ prompt = ChatPromptTemplate.from_messages(
 * **Open-AI**
 
 ```
+from langchain_openai import ChatOpenAI
+
 llm=ChatOpenAI(model="gpt-3.5-turbo")
 
 ```
@@ -85,15 +88,18 @@ llm=ChatOpenAI(model="gpt-3.5-turbo")
 * **Ollama**
 
 ```
+from langchain_ollama import OllamaLLM
 
-llm=OllamaLLM(model=model)
+llm=OllamaLLM(model="gemma2:latest")
 
 ```
 * **Hugging-face**
 
 ```
+from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
+
 hf_endpoint = HuggingFaceEndpoint(
-    repo_id=model,
+    repo_id="meta-llama/Llama-3.1-8B-Instruct",
     task="text-generation",
     max_new_tokens=512,
     do_sample=False,
@@ -108,6 +114,8 @@ llm=ChatHuggingFace(llm=hf_endpoint)
 ### Step-4: Create an object for Output parser
 
 ```
+from langchain_core.output_parsers import StrOutputParser
+
 output_parser = StrOutputParser()
 
 ```
