@@ -68,7 +68,7 @@ prompt = ChatPromptTemplate.from_messages(
     [
 
         ("system", "you are an intellegent agent. Please answer the queries asked by the user"),
-        ("user","question:{question}")
+        ("user","query:{query}")
     ]
 )
 
