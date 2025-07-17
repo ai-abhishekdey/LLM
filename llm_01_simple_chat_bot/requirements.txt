@@ -6,6 +6,9 @@ langchain-huggingface
 langchain-community
 langgraph
 langsmith
-langserve
+langserve[all]
 streamlit
-
+fastapi
+uvicorn
+pydantic
+sse_starlette
