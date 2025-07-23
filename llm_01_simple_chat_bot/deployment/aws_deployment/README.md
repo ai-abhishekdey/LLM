@@ -56,26 +56,89 @@ hf_endpoint = HuggingFaceEndpoint(
 * Sign In as [Root user](https://signin.aws.amazon.com/signin?client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26nc2%3Dh_si%26src%3Dheader-signin%26state%3DhashArgsFromTB_eu-north-1_6e05766ac7e8b412&page=resolve&code_challenge=pa7LMuI9Uv1v9j3ZjDiS5ZsIViiKsTm5XrW_rN1jWy8&code_challenge_method=SHA-256&backwards_compatible=true)
 
 
+<p align="left">
+<img src="img/img1.png" width="1080" height="480">
+</p>
+
+
 * Once you enter into AWS account, search for **Elastic Beanstalk**
+
+<p align="left">
+<img src="img/img2.png" width="1080" height="480">
+</p>
 
 * Click on **Create application**
 
+<p align="left">
+<img src="img/img3.png" width="1080" height="480">
+</p>
+
+
 ## Step-3 Setup configurations
 
+* In configure environment, write the **Application Name**
 
-* Click on **create role** in **Service role** section
+<p align="left">
+<img src="img/img4.png" width="1080" height="480">
+</p>
 
-* Click on **create role** in **EC2 instance profile**
+* Click of **next**
 
-  * Click on **next** -> **next** similar to the previous step
-  
-* Click on **next** -> **next** to keep default settings for the **optional configurations step 3-5**
+<p align="left">
+<img src="img/img5.png" width="1080" height="480">
+</p>
+
+* In **Service role** section, click on **create role** and click on **next -> next -> Create role** 
+
+<p align="left">
+<img src="img/img6.png" width="1080" height="480">
+</p>
+
+
+<p align="left">
+<img src="img/img7.png" width="1080" height="480">
+</p>
+
+<p align="left">
+<img src="img/img8.png" width="1080" height="480">
+</p>
+
+* Finally **aws-elasticbeanstalk-service-role** is created
+
+<p align="left">
+<img src="img/img9.png" width="1080" height="480">
+</p>
+
+
+* Similarly in **EC2 instance profile**, Click on **create role** and click on **next -> next -> Create role**  
+
+* **aws-elasticbeanstalk-ec2-role** is created
+
+<p align="left">
+<img src="img/img10.png" width="1080" height="480">
+</p>
+
+ 
+* Click on **next -> **next** to keep default settings for the **optional configurations step 3-5**
+
+<p align="left">
+<img src="img/img11.png" width="1080" height="480">
+</p>
 
 * Finally you launch into the **Review** section
 
+<p align="left">
+<img src="img/img12.png" width="1080" height="480">
+</p>
+
 * Scroll down and click on **create**
 
-* Around 3-4 minutes will be taken to create the environmment. Finally you should see a page like below
+<p align="left">
+<img src="img/img13.png" width="1080" height="480">
+</p>
+
+
+* Around 3-4 minutes will be taken to create the environmment. 
 
 
 ## zip the required files
@@ -86,4 +149,41 @@ zip hf_streamlit_chatbot.zip app.py Dockerfile requirements.txt .env
 
 ```
 
+## Upload and deploy
 
+* Upload the **hf_streamlit_chatbot.zip** file in the **Upload and deploy** section
+
+<p align="left">
+<img src="img/img14.png" width="1080" height="480">
+</p>
+
+
+<p align="left">
+<img src="img/img15.png" width="1080" height="480">
+</p>
+
+* Finally deployment is completed
+
+<p align="left">
+<img src="img/img16.png" width="1080" height="480">
+</p>
+
+* Click on the **Domain** link to access the streamlit app in the browser
+
+<p align="left">
+<img src="img/img17.png" width="1080" height="480">
+</p>
+
+
+## Terminate environment
+
+* Once you are done with the application, don't forget to **termintate** the environment
+
+<p align="left">
+<img src="img/img18.png" width="1080" height="480">
+</p>
+
+
+<p align="left">
+<img src="img/img19.png" width="1080" height="480">
+</p>
