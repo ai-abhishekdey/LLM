@@ -141,3 +141,10 @@ llm_response=chain.invoke({"query": query})
 * [using openai](using_openai)
 
 * [using hugging-face](using_huggingface)
+
+## Deployment:
+
+* [Deploy in local machine](deployment/local_machine)
+
+* [Deploy in AWS ](deployment/aws_deployment)
+

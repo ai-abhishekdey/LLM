@@ -119,7 +119,7 @@ hf_endpoint = HuggingFaceEndpoint(
 </p>
 
  
-* Click on **next -> **next** to keep default settings for the **optional configurations step 3-5**
+* Click on **next -> next** to keep default settings for the **optional configurations step 3-5**
 
 <p align="left">
 <img src="img/img11.png" width="1080" height="480">
@@ -138,10 +138,10 @@ hf_endpoint = HuggingFaceEndpoint(
 </p>
 
 
-* Around 3-4 minutes will be taken to create the environmment. 
+* Around 3-4 minutes will be taken to **create the environmment.**
 
 
-## zip the required files
+## Step-4: zip the required files
 
 ```
 
@@ -149,7 +149,7 @@ zip hf_streamlit_chatbot.zip app.py Dockerfile requirements.txt .env
 
 ```
 
-## Upload and deploy
+## Step-5: Upload and deploy
 
 * Upload the **hf_streamlit_chatbot.zip** file in the **Upload and deploy** section
 
@@ -175,7 +175,7 @@ zip hf_streamlit_chatbot.zip app.py Dockerfile requirements.txt .env
 </p>
 
 
-## Terminate environment
+## Step-6: Terminate environment
 
 * Once you are done with the application, don't forget to **termintate** the environment
 
