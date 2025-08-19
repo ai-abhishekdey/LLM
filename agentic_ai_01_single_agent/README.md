@@ -30,7 +30,7 @@ os.environ["HF_TOKEN"]
 * Load LLM model
 
 ```
-from crewai import LLM, Agent
+from crewai import LLM
 
 llm = LLM(
     model="huggingface/together/deepseek-ai/DeepSeek-R1",
