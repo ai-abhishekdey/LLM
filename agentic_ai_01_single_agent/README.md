@@ -120,7 +120,7 @@ python3 Crew.py
 ## Output
 
 <p align="left">
-<img src="pics/1.png" width="1080" height="480">>
+<img src="pics/1.png" width="1625" height="887">>
 </p>
 
 
